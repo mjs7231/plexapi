@@ -158,7 +158,7 @@ jobs:
         echo "PLEXAPI_AUTH_SERVER_TOKEN=${{ secrets.PLEXAPI_AUTH_SERVER_TOKEN }}" >> $GITHUB_ENV
 
     - name: Bootstrap ${{ matrix.plex }} Plex server
-      uses: nick-fields/retry@v3.0.0
+      uses: nick-fields/retry@v3.0.2
       with:
         max_attempts: 3
         timeout_minutes: 2
